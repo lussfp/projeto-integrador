@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './conta.css'
 })
 export class Conta {
+x = 0
 
+Incremento(){
+this.x ++
+}
+
+Decremento(){
+this.x--
+}
 }
