@@ -5,7 +5,6 @@ const routes: Routes = [
 
 {path: 'conta', component: Conta}
 
-
 ];
 
 @NgModule({
