@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common'; 
 import { DiretivaComponent } from './diretiva/diretiva.component';
 import { EstruturaRoutingModule } from './estrutura-routing-module';
 
@@ -9,7 +9,7 @@ import { EstruturaRoutingModule } from './estrutura-routing-module';
   ],
   imports: [
     CommonModule,
-    EstruturaRoutingModule
+    EstruturaRoutingModule 
   ],
   exports: [
     DiretivaComponent

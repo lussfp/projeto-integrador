@@ -12,15 +12,18 @@ export class DiretivaComponent {
     { nome: 'Vue', ativo: true },
     { nome: 'JavaScript', ativo: false },
   ];
+
   exibirLista: boolean = true;
   tamanhoFonte: number = 16;
-  
+
   alternarExibicao() {
     this.exibirLista = !this.exibirLista;
   }
+
   aumentarFonte() {
     this.tamanhoFonte++;
   }
+
   diminuirFonte() {
     this.tamanhoFonte--;
   }
