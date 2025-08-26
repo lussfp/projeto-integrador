@@ -3,19 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "proj-integrador": {
+    "proj-int": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -66,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "proj-integrador:build:production"
+              "buildTarget": "proj-int:build:production"
             },
             "development": {
-              "buildTarget": "proj-integrador:build:development"
+              "buildTarget": "proj-int:build:development"
             }
           },
           "defaultConfiguration": "development"

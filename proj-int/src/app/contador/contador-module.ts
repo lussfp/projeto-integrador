@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ContadorRoutingModule } from './contador-routing-module';
-import { Conta } from './conta/conta';
 
 
 @NgModule({
-  declarations: [
-    Conta
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     ContadorRoutingModule
