@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  
-{path: 'contador',
-loadChildren: () => import('./contador/contador-module').then(m => m.ContadorModule)},
-
-{path: 'estrutura',
-loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule)}
+     { path: '', redirectTo: '/estrutura', pathMatch: 'full' },
+    
+    { path: 'contador',
+        loadChildren: () => import('./contador/contador-module').then(m => m.ContadorModule)},
+    
+    { path: 'estrutura',
+        loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule)}
 
 ];
-
-
 
 
 @NgModule({
