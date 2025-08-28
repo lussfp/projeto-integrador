@@ -6,11 +6,15 @@
 
 <div *ngIf="mostrarListagem">
   <ul [ngStyle]="{'font-size.px': tamanhoFonte}">
-    <li *ngFor="let item of produtos" 
-        [ngClass]="{'ativo': item.ativo, 'inativo': !item.ativo}">
-      {{ item.cod }} - {{ item.nome }} → {{ item.ativo ? 'Disponível' : 'Indisponível' }}
-      | Preço: R$ {{ item.preco }}
-    </li>
+  <li *ngFor="let item of produtos" 
+    [ngClass]="{'ativo': item.ativo, 'inativo': !item.ativo}">
+  {{ item.cod }} - {{ item.nome }} → {{ item.ativo ? 'Disponível' : 'Indisponível' }}
+  | Preço: 
+  <span [ngClass]="{'preco-alto': item.preco > 2000, 'preco-baixo': item.preco <= 2000}">
+    R$ {{ item.preco }}
+  </span>
+</li>
+
   </ul>
 </div>
 
@@ -23,3 +27,4 @@
   <button (click)="aumentarPreco()">Aumentar Preço 10%</button>
   <button (click)="diminuirPreco()">Diminuir Preço 10%</button>
 </div>
+
