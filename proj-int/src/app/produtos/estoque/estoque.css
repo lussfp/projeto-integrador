@@ -13,13 +13,15 @@ ul {
 }
 
 .ativo {
-  color: blue; 
+  background-color: lightgreen;
   font-weight: bold;
+  color: black;                
 }
 
 .inativo {
-  color: red; 
-  font-weight: bold;
+  background-color: red;       
+  font-style: italic;           
+  color: white;                
 }
 
 button {

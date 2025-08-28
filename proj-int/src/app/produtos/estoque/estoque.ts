@@ -30,4 +30,18 @@ export class EstoqueComponent {
   diminuirFonte() {
     this.tamanhoFonte--;
   }
+
+  aumentarPreco() {
+    this.produtos = this.produtos.map(prod => ({
+      ...prod,
+      preco: +(prod.preco * 1.1).toFixed(2) 
+    }));
+  }
+
+  diminuirPreco() {
+    this.produtos = this.produtos.map(prod => ({
+      ...prod,
+      preco: +(prod.preco * 0.9).toFixed(2) 
+    }));
+  }
 }
