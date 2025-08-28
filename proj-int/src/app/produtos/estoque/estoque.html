@@ -1,4 +1,4 @@
-<h1>Listagem de alunos por atividade</h1>
+<h1>Listagem de produtos em estoque!</h1>
 
 <div>
   <button (click)="toggleMensagem()">Mostrar a Listagem</button>
@@ -7,7 +7,7 @@
 <div *ngIf="mostrarListagem">
 
   <ul [ngStyle]="{'font-size.px': tamanhoFonte}">
-    <li *ngFor="let item of listaalunos" 
+    <li *ngFor="let item of produtos" 
         [ngClass]="{'ativo': item.ativo, 'inativo': !item.ativo}">
       {{ item.cod }} - {{ item.nome }}
     </li>
@@ -16,6 +16,6 @@
 </div>
 
 <div>
-    <button (click)="aumentarFonte()">+</button>
-    <button (click)="diminuirFonte()">-</button>
-  </div>
+  <button (click)="aumentarFonte()">+</button>
+  <button (click)="diminuirFonte()">-</button>
+</div>

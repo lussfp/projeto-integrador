@@ -9,15 +9,23 @@ import { Component } from '@angular/core';
 })
 export class Diretiva {
 
-  cursos = [
-    { id: 123, nome: 'Ana', status: true },
-    { id: 213, nome: 'Bruna', status: true },
-    { id: 231, nome: 'Carlos', status: false },
-    { id: 321, nome: 'Daniel', status: false }
-  ]
+  mostrarListagem = false;
+tamanhoFonte = 14;
 
-  mostrarMensagem = true;
-  toggleMensagem() {
-    this.mostrarMensagem = !this.mostrarMensagem;
-  }
+listaalunos = [
+  { cod: 1, nome: 'Ana', ativo: true },
+  { cod: 2, nome: 'Bruno', ativo: false }
+];
+
+toggleMensagem() {
+  this.mostrarListagem = !this.mostrarListagem;
+}
+
+aumentarFonte() {
+  this.tamanhoFonte++;
+}
+
+diminuirFonte() {
+  this.tamanhoFonte--;
+}
 }
