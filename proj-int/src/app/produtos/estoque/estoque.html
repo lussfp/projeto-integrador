@@ -6,14 +6,17 @@
 
 <div *ngIf="mostrarListagem">
   <ul [ngStyle]="{'font-size.px': tamanhoFonte}">
-  <li *ngFor="let item of produtos" 
+ <li *ngFor="let item of produtos" 
     [ngClass]="{'ativo': item.ativo, 'inativo': !item.ativo}">
-  {{ item.cod }} - {{ item.nome }} → {{ item.ativo ? 'Disponível' : 'Indisponível' }}
+  {{ item.cod }} - {{ item.nome }} → 
+  <span *ngIf="item.ativo; else indisponivel">Disponível</span>
+  <ng-template #indisponivel>Indisponível</ng-template>
   | Preço: 
   <span [ngClass]="{'preco-alto': item.preco > 2000, 'preco-baixo': item.preco <= 2000}">
     R$ {{ item.preco }}
   </span>
 </li>
+
 
   </ul>
 </div>

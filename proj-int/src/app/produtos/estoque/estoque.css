@@ -13,8 +13,8 @@ ul {
 }
 
 .ativo {
-  background-color: lightgreen;
-  font-weight: bold;
+  background-color: rgb(70, 241, 70);
+  font-style: italic;
   color: black;                
 }
 
@@ -30,7 +30,7 @@ button {
 }
 
 .preco-alto {
-  background-color: blue;
+  background-color: rgb(35, 79, 136);
   color: white; 
 }
 
